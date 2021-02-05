@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>лол</title>
+</head>
+<body>
+	<button class="btn" onclick="colorChange()">Смена стиля</button>
+	<a href="https://multilandia.tv/ru/">
+		<button class="btn">Cайт</button>
+	</a>
+	
+
+	<style>
+		body{
+			background-color: #114;
+		}
+		button{
+			background-color: #699;
+		}
+	</style>
+
+	<script>
+		function colorChange(){
+			document.querySelector("body").style.backgroundColor  = "#" + Math.floor(Math.random() * 999);
+			let btnCl = "#" + Math.floor(Math.random() * 999);
+			var btns = document.querySelectorAll(".btn");
+			for(var i = 0; i < btns.length; i++){
+				btns[i].style.backgroundColor = "#" + Math.floor(Math.random() * 999);
+			}
+		}
+	</script>
+</body>
+</html>
