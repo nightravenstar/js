@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Objects</title>
+</head>
+<body>
+	
+
+	<script>
+		var temp = {
+			ireland: 17,
+			switzerland: 21,
+			hungary: 10,
+			germany: 20,
+		}
+		function averageTemp(){
+			let count = 0;
+			let allTemp = 0;
+			let key;
+			for(key in temp){
+				count++;
+				allTemp += temp[key];
+			}
+			return allTemp / count;
+		}
+		alert(averageTemp());
+	</script>
+</body>
+</html>
